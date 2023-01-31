@@ -1,5 +1,6 @@
 ## A KoFi Landing Page
 
-> npx tailwindcss -i ./nput.css -o ./output.css --watch
+Uses an iframe to populate a Kofi donation form. Other than that, a pretty lean tailwind template!
 
-To generate new tailwind using basic settings
+`npm install` - install tailwind
+`npx tailwindcss -i ./input.css -o ./output.css --watch` - if you make changes, run tailwind as a watcher
