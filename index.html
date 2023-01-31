@@ -40,8 +40,13 @@
 </head>
 
 
-<body class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
-
+<body onload="loadFrame()" class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
+<script>
+function loadFrame(){
+    var myFrame = document.getElementById('kofiframe');
+    myFrame.src = "https://ko-fi.com/morganwebdev/?hidefeed=true&widget=true&embed=true&preview=true";
+};
+</script>
 
 
 <div class="h-screen pb-14 bg-right bg-cover" style="background-image:url('bg.svg');">
@@ -55,7 +60,7 @@
 			
 			<div class="flex w-1/2 justify-end content-center items-center">	
 				
-				<a href="https://github.com/airbr" itemprop="sameAs" rel="me" class="u-url" class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4">
+				<a href="https://github.com/airbr" itemprop="sameAs" rel="me" class="u-url" class="bounce-top-icons inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4">
 					<figure>
 						<svg version="1.1" role="img" aria-labelledby="github-title" class="square"
 							 viewBox="0 0 512 512">
@@ -108,7 +113,7 @@
 		<div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
 			<!-- <img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="devices.svg"> -->
 			<iframe id='kofiframe' class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" 
-			src='https://ko-fi.com/morganwebdev/?hidefeed=true&widget=true&embed=true&preview=true' 
+			src='' 
 			style='border:none;width:100%;padding:4px;' height='712' title='morganwebdev'></iframe>
 		</div>
 		
